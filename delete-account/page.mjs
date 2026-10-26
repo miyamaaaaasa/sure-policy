@@ -14,3 +14,4 @@ $('sign').addEventListener('click', async () => {
     $('status').textContent = '作成できませんでした。ファイルと確認用データを確認してください。対応しない場合は最新版のChromeまたはSafariでお試しください。';
   } finally { $('proof').value = ''; $('sign').disabled = false; }
 });
+

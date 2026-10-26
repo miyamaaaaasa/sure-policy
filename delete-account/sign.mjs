@@ -13,3 +13,4 @@ export async function signProof(text, challenge) {
   const signature = new Uint8Array(await crypto.subtle.sign('Ed25519', key, new TextEncoder().encode(challenge)));
   return {request_id: challenge.split(':')[2], signature:btoa(String.fromCharCode(...signature))};
 }
+
